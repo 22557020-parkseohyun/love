@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>LOVE</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background: #fff;
+      color: #000;
+    }
+
+    header {
+      padding: 30px 0;
+      text-align: center;
+      border-bottom: 2px solid #f5a5b8;
+          }
+
+    header h1 {
+      font-size: 70px;
+      color: #e75480;
+      letter-spacing: 3px;
+    }
+
+    #container {
+      display: flex;
+      width: 100%;
+      min-height: 100vh;
+      background-color: #fff;
+    }
+
+    nav {
+      width: 220px;
+      padding: 20px;
+      margin: 20px;
+      background-color: #fdeef4;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    nav h3 {
+      text-align: center;
+      color: #c94c64;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding-left: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      margin-bottom: 12px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #c94c64;
+      font-weight: bold;
+    }
+
+    main {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .book {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .book:hover {
+      transform: translateY(-5px);
+    }
+
+    .book img {
+      width: 250px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-right: 30px;
+    }
+
+    .book-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .book-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .book-info {
+      flex: 1;
+    }
+
+    .book-content h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .poet-info {
+      font-weight: bold;
+      margin: 15px 0 10px;
+    }
+
+    .excerpt-box {
+      border: 1px solid #f5a5b8;
+      background-color: #ffe9ef;
+      border-radius: 20px;
+      padding: 20px;
+      margin-left: 20px;
+      width: 300px;
+      height: 400px;
+      font-style: italic;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .poem-text {
+      color: #555;
+      line-height: 1.8;
+    }
+
+    .buy-link {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 8px 16px;
+      border-radius: 25px;
+      background-color: #f5a5b8;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .buy-link:hover {
+      background-color: #e75480;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>LOVE</h1>
+  </header>
+
+  <div id="container">
+    <nav>
+      <h3>TITLE</h3>
+      <ul>
+        <li><a href="#">📅 life</a></li>
+        <li><a href="#">🌍 society</a></li>
+        <li><a href="#">🌿 season</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- 1 -->
+      <div class="book">
+        <img src="1.jpg" alt="시집 1">
+        <div class="book-content">
+          <div class="book-header">
+            <div class="book-info">
+              <h2>지금도 네가 보고 싶다</h2>
+              <p>나태주 사랑시집 《지금도 네가 보고 싶다》. 소설 같은 시집을 꿈꿔 왔던 시인은 시의 순서 배열부터 큰 공을 들여 시 작품들 사이의 서사적인 전개와 관통하는 이야기로 엮었다. 짝사랑이든, 이루어진 사랑이든 간에 사랑에 대한 경험을 한 번도 해 보지 않은 사람은 없을 것이다. 이 시집을 읽는 독자들은 한 권의 사랑 소설을 읽은 듯한 착각을 불러일킬 것이다.</p>
+              <div class="poet-info">나태주 시인</div>
+              <p>나태주 시인은 1971년 「대숲 아래서」로 등단한 이후, 소박하고 따뜻한 자연의 언어로 수천 편의 시를 발표한 국민 시인이다. 대표작 「풀꽃」을 비롯해 많은 이들의 사랑을 받았으며, 현재 공주풀꽃문학관을 운영하며 문학 활동을 이어가고 있다.</p>
+              <a class="buy-link" href="https://product.kyobobook.co.kr/detail/S000000977632" target="_blank">구매하기</a>
+            </div>
+            <div class="excerpt-box">
+              <p class="poem-text">"너를 생각하면 나는<br>
+              오만가지 마음으로 변하고<br>
+              너를 만나면 다시<br>
+              오만가지 변덕을 부리곤 한다"<br>
+              <em>「별을 사랑하여」中</em></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="book">
+        <img src="2.jpg" alt="시집 2">
+        <div class="book-content">
+          <div class="book-header">
+            <div class="book-info">
+              <h2>예보에 없던 비가 내립니다</h2>
+              <p>오늘도 상처 속에서 서서히 무뎌지며 일상을 살아갈 당신에게 보내는 위로와 감성 시집. 가끔은 잠이 오지 않아 뒤척이게 되는 날이 있는가 하면, 때로는 기분이 무척 좋아서 문득 올려다본 구름 낀 하늘마저 맑아 보이는 그런 날이 있다. 풍부한 감성을 간직한 시인의 짤막한 시에는 우리의 일상과 미처 돌아보지 못했던 감정들이 박혀 있어 긴 여운을 남긴다. 오늘 하루도 묵묵히 버텨 온 당신에게 새벽 감성을 더해 줄 한 페이지가 되어 줄 것이다.</p>
+              <div class="poet-info">최은비 시인</div>
+              <p>최은비 시인은 말보다 글로 감정을 표현하는 것이 더 편해, 글을 쓰기 시작했다. 경영학 석사를 마친 후 마케팅 회사를 운영하며 기업 마케팅 컨설팅과 브랜드 블로그 운영을 통해 기업에 도움이 되는 글을 쓰고 있다.</p>
+              <a class="buy-link" href="https://product.kyobobook.co.kr/detail/S000214665189" target="_blank">구매하기</a>
+            </div>
+            <div class="excerpt-box">
+              <p class="poem-text">"너를 생각하면 나는<br>
+              "차라리 물어보지 말 걸 그랬다<br>
+              듣지 말 걸 그랬다<br>
+              한 치의 망설임도 없이 나온<br>
+              너의 대답은<br>
+              오늘 밤 나의 잠을 다 깨우고 말았다<br>
+              <em>「끝은 정해져 있다」中</em></p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="book">
+        <img src="3.jpg" alt="시집 3">
+        <div class="book-content">
+          <div class="book-header">
+            <div class="book-info">
+              <h2>너와 걷는 길</h2>
+              <p>김수운 저자의 《너와 걷는 길》은 누가 읽든 쉽게 이해할 수 있는 내용의 시들이다. 또한 여타 시집과 달리 감성의 울림이 굉장히 큰 시집이기도 하다. 마음에 파문을 일으키는 로맨틱한 시와 슬픔을 전하는 시를 함께 실었기에 사랑에 대한 벅참과 슬픔, 환희와 좌절, 이별에 대한 뼈아픈 경험을 생생하게 느낄 수 있다.</p>
+              <div class="poet-info">김수운 시인</div>
+              <p>김수운 시인은 한국의 근현대 시사에 뚜렷한 자취를 남긴 시인으로, 날카로운 시대 인식과 깊은 내면 성찰을 담은 작품 활동을 펼쳐왔다. 현실과 인간 존재에 대한 철학적 탐구를 시로 풀어내며 독자들에게 깊은 울림을 주는 작가로 평가받는다.</p>
+              <a class="buy-link" href="https://product.kyobobook.co.kr/detail/S000001809932" target="_blank">구매하기</a>
+            </div>
+            <div class="excerpt-box">
+              <p class="poem-text">"무언가를 찾아서 헤매던 청춘의 나날은<br>
+              아무것도 찾지 못하는 공허함의 종착역에 다다르고<br>
+              별을 바라보며 하얗게 지새우는 밤에<br>
+              참을 수 없는 슬픔을 가슴 깊이 새긴다."<br>
+              <em>「아름다운 귀로」中</em></p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
